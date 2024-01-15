@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 export default function Form(props) {
   const handleUpClick = () => {
-    // console.log("uppercase was clicked" + text);
+   
     let newtext = text.toUpperCase();
     setText(newtext);
     props.showAlert("converted to uppercase","success");
   };
   const handleloClick = () => {
-    // console.log("uppercase was clicked" + text);
+    
     let newtext = text.toLowerCase();
     setText(newtext);
     props.showAlert("converted to lowercase","success");
@@ -74,16 +74,16 @@ export default function Form(props) {
           ></textarea>
         </div> 
 
-        <button className="btn btn-primary mx-2" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>
           convert to uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleloClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleloClick}>
           convert to lowercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleCleartext}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleCleartext}>
           ClearText
         </button>
-        <button className="btn btn-primary mx-2" onClick={lengthanalyze}>
+        <button className="btn btn-primary mx-2 my-1" onClick={lengthanalyze}>
           length analyze
         </button>
       </div>
